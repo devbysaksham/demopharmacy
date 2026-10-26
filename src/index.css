@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+}
+
+/* Custom subtle patterns and glow effects */
+.pharma-hero-gradient {
+  background: radial-gradient(circle at 80% 20%, rgba(14, 165, 233, 0.12) 0%, rgba(240, 247, 255, 0.8) 50%, #ffffff 100%);
+}
+
+.pharma-card-shadow {
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
+}
+
+.pharma-card-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pharma-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px -4px rgba(14, 116, 144, 0.12), 0 6px 12px -2px rgba(15, 23, 42, 0.04);
+}
